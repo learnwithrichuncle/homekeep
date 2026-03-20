@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Page Not Found | HomeKeep</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,700&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#1B3A2D",
+                        "secondary-container": "#F4A535",
+                        "surface": "#fef9ee"
+                    },
+                    fontFamily: {
+                        "headline": ["Fraunces", "serif"],
+                        "body": ["Plus Jakarta Sans", "sans-serif"]
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-surface text-primary font-body flex items-center justify-center min-h-screen p-8 text-center">
+    <div class="max-w-xl">
+        <div class="mb-8 relative inline-block">
+            <!-- Dicebear Error Bot Avatar -->
+            <img src="https://api.dicebear.com/7.x/bottts/svg?seed=error&colors=primary&backgroundColor=secondary-container" alt="Error Bot" class="w-32 h-32 mx-auto rounded-full shadow-lg border-4 border-primary/10 mb-6">
+            <div class="absolute -top-4 -right-4 bg-red-500 text-white text-xs font-bold px-3 py-1 rounded-full animate-bounce">404</div>
+        </div>
+        
+        <h1 class="font-headline text-5xl md:text-7xl font-bold mb-4">Are you lost?</h1>
+        <p class="text-lg text-primary/70 mb-10 leading-relaxed">
+            It looks like the room you're looking for was recently moved or never existed. Our concierge is back at the main desk to help you.
+        </p>
+        
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+            <a href="index.html" class="bg-primary text-white px-8 py-4 rounded-xl font-bold hover:scale-105 transition-all">
+                Back to Home
+            </button>
+            <a href="index.html#services" class="border-2 border-primary/20 text-primary px-8 py-4 rounded-xl font-bold hover:bg-primary/5 transition-all">
+                View Services
+            </a>
+        </div>
+        
+        <!-- Premium Illustration Background (Subtle) -->
+        <div class="mt-20 opacity-20 grayscale">
+            <img src="https://images.unsplash.com/photo-1600585154340-be6199f7d209?w=800&q=80" alt="Modern Home" class="rounded-3xl shadow-2xl">
+        </div>
+    </div>
+</body>
+</html>
